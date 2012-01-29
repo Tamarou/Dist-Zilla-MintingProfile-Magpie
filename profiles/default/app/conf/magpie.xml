@@ -5,12 +5,6 @@
         <variant name="html" type="text/html"/>
     </accept_matrix>
     <pipeline>
-        <match type="regexp" rule="^/sessions">
-            <add class="Magpie::Resource::Session"/>
-        </match>
-        <match type="regexp" rule="^/(?!question|user|sessions).*">
-            <add class="Magpie::Resource::Abstract"/>
-        </match>
         <match type="accept" variant_name="json">
             <add class="Magpie::Transformer::JSON"/>
         </match>
