@@ -1,4 +1,4 @@
-package {{$dist->name}};
+package {{($prefix = $dist->name) =~ s/-/::/g; $prefix}};
 use Moose;
 
 # ABSTRACT: An amazing new application!

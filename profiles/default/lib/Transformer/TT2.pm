@@ -1,4 +1,4 @@
-package {{$dist->name}}::Transformer::TT2;
+package {{($prefix = $dist->name) =~ s/-/::/g; $prefix}}::Transformer::TT2;
 use Moose;
 extends qw(Magpie::Transformer::TT2);
 
